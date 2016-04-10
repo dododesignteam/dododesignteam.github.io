@@ -1,0 +1,11 @@
+h4{
+    color:#e27536 !important;
+}
+.content-list,
+.side-menu-list{
+    padding:0 0 0 20px;
+}
+.footer-info-header{
+    text-transform: uppercase;
+    font-weight: bold;
+}

@@ -103,11 +103,11 @@ function header() {
     // Sticky Header Elements
     $(window).scroll(function () {
         if ($(this).scrollTop() > 1) {
-            $('.header').addClass("sticky");
+            //$('.header').addClass("sticky");
             $('.inner-inro').css('z-index', '-1');
         }
         else {
-            $('.header').removeClass("sticky");
+            //$('.header').removeClass("sticky");
             $('.inner-inro').css('z-index', 'auto');
         }
     });

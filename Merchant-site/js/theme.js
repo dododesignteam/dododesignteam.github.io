@@ -227,7 +227,7 @@ function sliderAll() {
         paginationSpeed: 400,
         singleItem: true,
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        autoPlay: false,
+        autoPlay: true,
         autoHeight: true,
         responsive: true
     });

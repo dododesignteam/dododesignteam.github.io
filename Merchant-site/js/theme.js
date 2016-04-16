@@ -212,6 +212,7 @@ function sliderAll() {
     $('.fullwidth-slider').owlCarousel({
         slideSpeed: 400,
         singleItem: true,
+        autoPlay: true,
         autoHeight: true,
         navigation: true,  // Show next and prev buttons
         pagination: true,  // Show pagination buttons
@@ -247,7 +248,7 @@ function sliderAll() {
 
     // Team Carousel
     $('.team-carousel').owlCarousel({
-        autoPlay: false,
+        autoPlay: true,
         stopOnHover: true,
         items: 3,
         itemsDesktop: [1170, 3],
@@ -316,7 +317,7 @@ function sliderAll() {
 
     // Item-3 Carousel
     $('.item3-carousel').owlCarousel({
-        autoPlay: false,
+        autoPlay: true,
         stopOnHover: true,
         items: 3,
         itemsDesktop: [1170, 3],
@@ -330,7 +331,7 @@ function sliderAll() {
 
     // Item-1 Carousel
     $('.item1-carousel').owlCarousel({
-        autoPlay: false,
+        autoPlay: true,
         autoHeight: true,
         stopOnHover: true,
         singleItem: true,
@@ -362,7 +363,7 @@ function sliderHero() {
         touchDrag: true,
         singleItem: true,
         navigationText: false,
-        autoPlay: false,
+        autoPlay: true,
         autoHeight: false,
 
         //responsive: true,

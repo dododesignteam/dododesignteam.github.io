@@ -1194,8 +1194,8 @@ form label.error {
     }
 
 .header.sticky .logo a {
-    width: 75px;
-    margin-top: 6px;
+    width: 125px;
+    margin-top: 3px;
 }
 
 .logo a img {
@@ -1443,10 +1443,10 @@ header.sticky .navigation a.current-ele {
         padding: 19px 0 20px;
     }
 
-    /*.header .logo a, .header.sticky .logo a {
-        margin-top: 25px;
-        width: 95px;
-    }*/
+    .header .logo a, .header.sticky .logo a {
+        margin-top: 6px;
+        width: 75px;
+    }
     /* END HEADER STYLE ------------------ */
 }
 

@@ -16168,6 +16168,9 @@ img {
 .right-align {
   text-align: right;
 }
+.center-align {
+  text-align: center;
+}
 #header {
   background-color: transparent;
   box-shadow: none;

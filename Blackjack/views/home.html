@@ -1,17 +1,20 @@
 <header id="header" data-current-skin={{mactrl.currentSkin}} data-ng-include="'template/header.html'" data-ng-controller="headerCtrl as hctrl"></header>
 
 <section id="main">
+    <aside id="sidebar" data-ng-include="'template/sidebar-left.html'" data-ng-class="{ 'toggled': mactrl.sidebarToggle.left === true }"></aside>
+
+    <aside id="chat" data-ng-include="'template/chat.html'" data-ng-class="{ 'toggled': mactrl.sidebarToggle.right === true }"></aside>
 
     <section id="content">
 
         <div class="container">
             
             <div class="row prize-funds">
-                <div class="col-xs-6 jackpot">
+                <div class="col-xs-6 jackpot center-align">
                     <img src="img/jackpot.png">
-                    <h3>€1,000,656<span>Max Bet</span></h3>
+                    <h3>€1,000,658<span>Max Bet</span></h3>
                 </div>
-                <div class="col-xs-6 jackpot">
+                <div class="col-xs-6 jackpot center-align">
                     <img src="img/777.png">
                     <h3>€10,657<span>Max Bet</span></h3>
                 </div>

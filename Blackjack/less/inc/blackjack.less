@@ -2,6 +2,13 @@ body{
     background: -webkit-linear-gradient(left top, #3023ae, #c86dd7);
     font-family: 'Montserrat', sans-serif;
 }
+#main{
+    padding-top:80px;
+}
+#sidebar{
+    width:100%;
+    top:0;
+}
 img{
     max-width:100%;
 }
@@ -29,10 +36,14 @@ img{
     }
 }
 #footer{
-    height:140px;
+    height:100px;
+    padding:0;
     .footer-text p{
         margin:0;
         color:white;
+    }
+    .sm-text{
+        font-size: 8px;
     }
 }
 
@@ -117,4 +128,16 @@ img{
             margin-top:-90%;
         }
     }
+}
+
+/* ACTION BUTTONS */
+.action-btn{
+    background:green;
+    color:white;
+    text-transform: uppercase;
+    border:2px solid #18181a;
+    display: block;
+    padding:12px 15px;
+    border-radius:20px;
+    margin-bottom:20px;
 }

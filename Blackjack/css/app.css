@@ -16208,6 +16208,13 @@ img {
   display: block;
   font-size: 8px;
 }
+/* INSTRUCTION */
+.instruction {
+  margin: 0 auto;
+}
+.instruction h4 {
+  color: white;
+}
 /* CARDS */
 .player-cards h2 {
   color: white;

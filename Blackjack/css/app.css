@@ -16157,7 +16157,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 #main {
-  padding-top: 70px;
+  padding-top: 60px;
 }
 #sidebar {
   width: 100%;
@@ -16193,12 +16193,19 @@ img {
 #header {
   background-color: transparent;
   box-shadow: none;
+  min-height: 50px;
 }
-#header .logo a {
+#header .header-inner {
   padding: 0;
 }
+#header .header-inner .line-wrap {
+  margin: 19px 20px;
+}
+#header .logo a {
+  padding-top: 12px;
+}
 #header .logo a img {
-  height: 40px;
+  height: 30px;
 }
 #footer {
   height: inherit;
@@ -16238,7 +16245,7 @@ img {
 /* CARDS */
 .player-cards h2 {
   color: white;
-  font-size: 16px;
+  font-size: 12px;
   text-transform: uppercase;
   margin: 10px 0 5px 0;
 }
@@ -16265,7 +16272,7 @@ img {
 }
 .dealer-cards h2 {
   color: white;
-  font-size: 16px;
+  font-size: 12px;
   text-transform: uppercase;
   margin: 10px 0 5px 0;
 }

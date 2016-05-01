@@ -16232,6 +16232,7 @@ img {
   display: inline-table;
   width: 15%;
   margin: 0 5px;
+  max-width: 40px;
 }
 /* PRIZE FUNDS */
 .prize-funds {

@@ -4310,6 +4310,7 @@ body {
 
 .main-menu {
   margin: 80px 0 0 0;
+  z-index: 5;
 }
 
 .main-menu li a {
@@ -4359,6 +4360,7 @@ img {
 
 #header .logo a img {
   height: 30px;
+  z-index: 4;
 }
 
 #footer {
@@ -4378,11 +4380,13 @@ img {
 #footer ul {
   list-style: none;
   text-align: center;
+  padding: 0;
 }
 
 #footer ul li {
   display: inline-table;
   width: 15%;
+  margin: 0 5px;
 }
 
 /* PRIZE FUNDS */
@@ -4430,7 +4434,7 @@ img {
   position: absolute;
   bottom: -10px;
   left: 20px;
-  z-index: 2000;
+  z-index: 4;
   border: 1px solid #18181a;
   color: #F5A623;
   background: -webkit-linear-gradient(top, #818181, #4a4a4a);
@@ -4476,7 +4480,7 @@ img {
   position: absolute;
   bottom: -10px;
   right: 20px;
-  z-index: 2000;
+  z-index: 4;
   border: 1px solid #18181a;
   color: #F5A623;
   background: -webkit-linear-gradient(top, #818181, #4a4a4a);
@@ -4512,7 +4516,11 @@ img {
 .action-area {
   margin: 10px;
   position: absolute;
-  bottom: 70px;
+  bottom: 80px;
+  background-image: url(../img/bgr-logo.png);
+  background-repeat: no-repeat;
+  background-size: 75% 75%;
+  background-position: center center;
 }
 
 .right-btns {

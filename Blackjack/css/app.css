@@ -16157,7 +16157,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 #main {
-  padding-top: 80px;
+  padding-top: 70px;
 }
 #sidebar {
   width: 100%;
@@ -16211,9 +16211,6 @@ img {
 #footer .sm-text {
   font-size: 8px;
 }
-.chips {
-  margin-bottom: 10px;
-}
 .chips img {
   width: 70%;
 }
@@ -16243,6 +16240,7 @@ img {
   color: white;
   font-size: 16px;
   text-transform: uppercase;
+  margin: 10px 0 5px 0;
 }
 .player-cards .hand {
   list-style: none;
@@ -16250,16 +16248,17 @@ img {
   margin: 0;
 }
 .player-cards .hand li {
-  width: 90%;
+  width: 85%;
 }
 .player-cards .hand .card2,
-.player-cards .hand .card4 {
+.player-cards .hand .card4,
+.player-cards .hand .card6 {
   margin-left: 10%;
-  margin-top: -90%;
+  margin-top: -88%;
 }
 .player-cards .hand .card3,
 .player-cards .hand .card5 {
-  margin-top: -90%;
+  margin-top: -88%;
 }
 .dealer-cards {
   text-align: right;
@@ -16268,6 +16267,7 @@ img {
   color: white;
   font-size: 16px;
   text-transform: uppercase;
+  margin: 10px 0 5px 0;
 }
 .dealer-cards .hand {
   list-style: none;
@@ -16275,23 +16275,24 @@ img {
   margin: 0;
 }
 .dealer-cards .hand li {
-  width: 90%;
+  width: 85%;
   float: right;
 }
 .dealer-cards .hand .card2,
-.dealer-cards .hand .card4 {
+.dealer-cards .hand .card4,
+.dealer-cards .hand .card6 {
   margin-right: 10%;
-  margin-top: -90%;
+  margin-top: -88%;
 }
 .dealer-cards .hand .card3,
 .dealer-cards .hand .card5 {
-  margin-top: -90%;
+  margin-top: -88%;
 }
 /* ACTION AREA */
 .action-area {
-  padding: 20px;
+  margin: 10px;
   position: absolute;
-  bottom: 100px;
+  bottom: 70px;
 }
 .right-btns {
   float: right;
@@ -16302,16 +16303,36 @@ img {
   text-transform: uppercase;
   border: 2px solid #18181a;
   display: inline-block;
-  padding: 12px 0;
-  width: 100%;
+  padding: 0 8px;
+  height: 40px;
+  width: 90%;
   border-radius: 20px;
   margin-bottom: 10px;
   box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, 0.53);
+  line-height: 1;
+  font-size: 10px;
 }
+.action-btn span {
+  width: 48%;
+  vertical-align: middle;
+}
+.action-btn span.odds {
+  float: left;
+}
+.action-btn span.action {
+  float: right;
+}
+/* POT */
 .pot h4 {
   color: white;
   text-align: center;
 }
-.pot img {
-  max-width: 20%;
+.pot ul {
+  list-style: none;
+  text-align: center;
+}
+.pot ul li {
+  display: inline-table;
+  width: 15%;
+  margin-left: -10%;
 }

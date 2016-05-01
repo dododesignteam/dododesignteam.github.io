@@ -1,12 +1,20 @@
 /* VARIABLES */
 @boxshadow: 2px 2px 2px -1px rgba(0,0,0,0.53);
+@purple-haze: -webkit-linear-gradient(left top, #3023ae, #c86dd7);
+@green-giant: -webkit-linear-gradient(top, #B4EC51, #429321);
+@grey-goose: -webkit-linear-gradient(top, #818181, #4a4a4a);
+@black: #18181a;
+@orangina: #F5A623;
 
 body{
-    background: -webkit-linear-gradient(left top, #3023ae, #c86dd7);
+    background: @purple-haze;
     font-family: 'Montserrat', sans-serif;
 }
 #main{
     padding-top:60px;
+}
+.game-container{
+    max-width:768px;
 }
 #sidebar{
     width:100%;
@@ -68,11 +76,13 @@ img{
     .sm-text{
         font-size: 8px;
     }
-}
-
-.chips{
-    img{
-        width:70%;
+    ul{
+        list-style: none;
+        text-align: center;
+        li{
+            display:inline-table;
+            width:15%;
+        }
     }
 }
 
@@ -101,11 +111,23 @@ img{
 
 /* CARDS */
 .player-cards{
+    position: relative;
     h2{
         color:white;
         font-size: 12px;
         text-transform: uppercase;
         margin:10px 0 5px 0;
+    }
+    .count{
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        z-index: 2000;
+        border:1px solid @black;
+        color:@orangina;
+        background: @grey-goose;
+        padding:4px 8px;
+        border-radius: 15px;
     }
     .hand{
         list-style: none;
@@ -128,12 +150,24 @@ img{
 }
 
 .dealer-cards{
+    position: relative;
     text-align: right;
     h2{
         color:white;
         font-size: 12px;
         text-transform: uppercase;
         margin:10px 0 5px 0;
+    }
+    .count{
+        position: absolute;
+        bottom: -10px;
+        right: 20px;
+        z-index: 2000;
+        border:1px solid @black;
+        color:@orangina;
+        background: @grey-goose;
+        padding:4px 8px;
+        border-radius: 15px;
     }
     .hand{
         list-style: none;
@@ -166,7 +200,7 @@ img{
     float:right;
 }
 .action-btn{
-    background: -webkit-linear-gradient(top, #B4EC51, #429321);
+    background: @green-giant;
     color:white;
     text-transform: uppercase;
     border:2px solid #18181a;

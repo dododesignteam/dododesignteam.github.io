@@ -4295,6 +4295,10 @@ body {
   padding-top: 60px;
 }
 
+.game-container {
+  max-width: 768px;
+}
+
 #sidebar {
   width: 100%;
   top: 0;
@@ -4371,8 +4375,14 @@ img {
   font-size: 8px;
 }
 
-.chips img {
-  width: 70%;
+#footer ul {
+  list-style: none;
+  text-align: center;
+}
+
+#footer ul li {
+  display: inline-table;
+  width: 15%;
 }
 
 /* PRIZE FUNDS */
@@ -4405,11 +4415,27 @@ img {
 
 /* CARDS */
 
+.player-cards {
+  position: relative;
+}
+
 .player-cards h2 {
   color: white;
   font-size: 12px;
   text-transform: uppercase;
   margin: 10px 0 5px 0;
+}
+
+.player-cards .count {
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  z-index: 2000;
+  border: 1px solid #18181a;
+  color: #F5A623;
+  background: -webkit-linear-gradient(top, #818181, #4a4a4a);
+  padding: 4px 8px;
+  border-radius: 15px;
 }
 
 .player-cards .hand {
@@ -4435,6 +4461,7 @@ img {
 }
 
 .dealer-cards {
+  position: relative;
   text-align: right;
 }
 
@@ -4443,6 +4470,18 @@ img {
   font-size: 12px;
   text-transform: uppercase;
   margin: 10px 0 5px 0;
+}
+
+.dealer-cards .count {
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+  z-index: 2000;
+  border: 1px solid #18181a;
+  color: #F5A623;
+  background: -webkit-linear-gradient(top, #818181, #4a4a4a);
+  padding: 4px 8px;
+  border-radius: 15px;
 }
 
 .dealer-cards .hand {

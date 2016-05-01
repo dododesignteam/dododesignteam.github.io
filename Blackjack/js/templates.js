@@ -7,7 +7,35 @@ angular.module('materialAdmin').run(['$templateCache', function($templateCache) 
 
 
   $templateCache.put('template/footer.html',
-    "<div class=\"container\"><div class=\"row no-gutter chips\"><div class=\"col-xs-2\"><img src=\"img/Chips/blue-chip.png\"></div><div class=\"col-xs-2\"><img src=\"img/Chips/red-chip.png\"></div><div class=\"col-xs-2\"><img src=\"img/Chips/green-chip.png\"></div><div class=\"col-xs-2\"><img src=\"img/Chips/black-chip.png\"></div><div class=\"col-xs-2\"><img src=\"img/Chips/purple-chip.png\"></div></div><div class=\"row footer-text\"><div class=\"col-xs-6 left-align\"><p>Balance €567.50</p><p class=\"sm-text\">*Minimum Payout</p></div><div class=\"col-xs-6 right-align\"><p>Rewards Pts 173</p><p class=\"sm-text\">Licenced in Ireland</p></div></div></div>"
+    "<div class=\"container\"><div class=\"row no-gutter chips\"><!--<div class=\"col-xs-2\">\r" +
+    "\n" +
+    "            <img src=\"img/Chips/blue-chip.png\">\r" +
+    "\n" +
+    "        </div>\r" +
+    "\n" +
+    "        <div class=\"col-xs-2\">\r" +
+    "\n" +
+    "            <img src=\"img/Chips/red-chip.png\">\r" +
+    "\n" +
+    "        </div>\r" +
+    "\n" +
+    "        <div class=\"col-xs-2\">\r" +
+    "\n" +
+    "            <img src=\"img/Chips/green-chip.png\">\r" +
+    "\n" +
+    "        </div>\r" +
+    "\n" +
+    "        <div class=\"col-xs-2\">\r" +
+    "\n" +
+    "            <img src=\"img/Chips/black-chip.png\">\r" +
+    "\n" +
+    "        </div>\r" +
+    "\n" +
+    "        <div class=\"col-xs-2\">\r" +
+    "\n" +
+    "            <img src=\"img/Chips/purple-chip.png\">\r" +
+    "\n" +
+    "        </div>--><ul><li><img src=\"img/Chips/blue-chip.png\"></li><li><img src=\"img/Chips/red-chip.png\"></li><li><img src=\"img/Chips/green-chip.png\"></li><li><img src=\"img/Chips/black-chip.png\"></li><li><img src=\"img/Chips/purple-chip.png\"></li></ul></div><div class=\"row footer-text\"><div class=\"col-xs-6 left-align\"><p>Balance €567.50</p><p class=\"sm-text\">*Minimum Payout</p></div><div class=\"col-xs-6 right-align\"><p>Rewards Pts 173</p><p class=\"sm-text\">Licenced in Ireland</p></div></div></div>"
   );
 
 

@@ -4518,7 +4518,6 @@ img {
   position: absolute;
   margin: 0 15px 0 0;
   bottom: 90px;
-  background-image: url(../img/bgr-logo.png);
   background-repeat: no-repeat;
   background-size: 75% 75%;
   background-position: center center;
@@ -4573,4 +4572,47 @@ img {
   display: inline-table;
   width: 15%;
   margin-left: -10%;
+}
+
+body.login-content-blackjack {
+  background-image: url(../img/blackjack-bgr.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+body.login-content-blackjack .login-logo {
+  text-align: center;
+  padding: 60px 0 40px 0;
+  width: 50%;
+  margin: 0 auto;
+}
+
+body.login-content-blackjack .prize-funds h2 {
+  color: white;
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+
+body.login-content-blackjack .prize-funds p {
+  font-size: 10px;
+  text-transform: none;
+  color: white;
+}
+
+body.login-content-blackjack .form-btn {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid #18181a;
+  display: inline-block;
+  padding: 16px 8px;
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  line-height: 1;
+  font-size: 16px;
+}
+
+body.login-content-blackjack .form-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
 }

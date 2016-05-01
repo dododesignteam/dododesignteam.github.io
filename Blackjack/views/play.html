@@ -1,0 +1,153 @@
+<header id="header" data-current-skin={{mactrl.currentSkin}} data-ng-include="'template/header.html'" data-ng-controller="headerCtrl as hctrl"></header>
+
+<section id="main">
+    <aside id="sidebar" data-ng-include="'template/sidebar-left.html'" data-ng-class="{ 'toggled': mactrl.sidebarToggle.left === true }"></aside>
+
+    <aside id="chat" data-ng-include="'template/chat.html'" data-ng-class="{ 'toggled': mactrl.sidebarToggle.right === true }"></aside>
+
+    <section id="content">
+
+        <div class="container game-container">
+            
+            <div class="row prize-funds">
+                <div class="col-xs-4 col-xs-offset-2 jackpot center-align">
+                    <img src="img/jackpot.png">
+                    <h3>€1,000,658<span>Max Bet</span></h3>
+                </div>
+                <div class="col-xs-4 jackpot center-align">
+                    <img src="img/777.png">
+                    <h3>€10,657<span>Max Bet</span></h3>
+                </div>
+            </div>
+            
+            <div class="row hands">
+                <div class="col-xs-6 player-cards">
+                    <h2>Player</h2>
+                    <div class="row">
+                        <div class="count">
+                            5/15
+                        </div>
+                        <div class="col-xs-7">
+                            <ul class="hand">
+                                <li>
+                                    <img src="img/Black-Cards/Spades/2-spades.png">
+                                </li>
+                                <li class="card2">
+                                    <img src="img/Black-Cards/Spades/8-spades.png">
+                                </li>
+                                <li class="card3">
+                                    <img src="img/Black-Cards/Spades/8-spades.png">
+                                </li>
+                                <li class="card4">
+                                    <img src="img/Red-Cards/Hearts/4-hearts.png">
+                                </li>
+                                <li class="card5">
+                                    <img src="img/Red-Cards/Hearts/4-hearts.png">
+                                </li>
+                                <li class="card6">
+                                    <img src="img/Red-Cards/Hearts/4-hearts.png">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-5">
+                            <ul class="hand">
+                                <li>
+                                    <img src="img/Black-Cards/Spades/2-spades.png">
+                                </li>
+                                <li class="card2">
+                                    <img src="img/Black-Cards/Spades/8-spades.png">
+                                </li>
+                                <li class="card3">
+                                    <img src="img/Black-Cards/Spades/8-spades.png">
+                                </li>
+                                <li class="card4">
+                                    <img src="img/Red-Cards/Hearts/4-hearts.png">
+                                </li>
+                                <li class="card5">
+                                    <img src="img/Black-Cards/Spades/8-spades.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 dealer-cards">
+                    <h2>Dealer</h2>
+                    <div class="row">
+                        <div class="count">
+                            5/15
+                        </div>
+                        <div class="col-xs-5 cards">
+                            <ul class="hand">
+                                <li></li>
+                                <li class="card2"></li>
+                                <li class="card3"></li>
+                                <li class="card4"></li>
+                                <li class="card5"></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-7 cards">
+                            <ul class="hand">
+                                <li>
+                                    <img src="img/Red-Cards/Diamonds/2-diamonds.png">
+                                </li>
+                                <li class="card2">
+                                    <img src="img/Black-Cards/Spades/8-spades.png">
+                                </li>
+                                <li class="card3">
+                                    <img src="img/Black-Cards/Spades/8-spades.png">
+                                </li>
+                                <li class="card4">
+                                </li>
+                                <li class="card5">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--<div class="instruction center-align">
+                <h4>Make a Bet to Start</h4>
+            </div>-->
+            
+            <div class="row">
+                <div class="col-xs-12 pot">
+                    <h4>€132</h4>
+                    <ul>
+                        <li>
+                            <img src="img/Chips/black-chip.png">
+                        </li>
+                        <li>
+                            <img src="img/Chips/red-chip.png">
+                        </li>
+                        <li>
+                            <img src="img/Chips/green-chip.png">
+                        </li>
+                        <li>
+                            <img src="img/Chips/blue-chip.png">
+                        </li>
+                        <li>
+                            <img src="img/Chips/blue-chip.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</section>
+
+<div class="container game-container">
+    <div class="row action-area no-gutter">
+        <div class="col-xs-6 btns">
+            <button class="action-btn"><span class="odds left-align">€10 Odds 12%</span><span class="action right-align">Draw to Win</span></button>
+            <button class="action-btn"><span class="odds left-align">€10 Odds 12%</span><span class="action">Draw 21</span></button>
+        </div>
+        <div class="col-xs-6 btns">
+            <button class="action-btn right-btns">Surrender</button>
+            <button class="action-btn right-btns">Split</button>
+        </div>
+    </div>
+</div>
+
+<footer id="footer" data-ng-include="'template/footer.html'"></footer>

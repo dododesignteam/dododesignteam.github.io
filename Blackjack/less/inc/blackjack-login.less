@@ -1,5 +1,6 @@
 @black-trans: rgba(0,0,0,0.5);
 @black-trans-hover: rgba(0,0,0,0.8);
+@white-trans: rgba(255,255,255,0.4);
 
 body.login-content-blackjack{
     background-image:url(../img/blackjack-bgr.jpg);
@@ -25,22 +26,71 @@ body.login-content-blackjack{
         color: white;
     }
 }
+    
+    input{
+        background: @white-trans;
+        color:#18181a;
+        border:1px solid #18181a;
+        display: inline-block;
+        padding:30px 8px;
+        height:8vh;
+        line-height:50px;
+        width:100%;
+        border-radius:40px;
+        font-size: 12px;
+    }
+    ::-webkit-input-placeholder{
+        color:@black;
+        padding-left:32px;
+    }
 
 .form-btn{
     background: @black-trans;
     color:white;
     text-transform: uppercase;
-    border:2px solid #18181a;
+    border:1px solid #18181a;
     display: inline-block;
     padding:16px 8px;
     width:100%;
     border-radius:30px;
     margin-bottom:10px;
     line-height: 1;
-    font-size: 16px;
+    font-size: 12px;
+    font-weight: bold;
     &:hover{
         background: @black-trans-hover;
     }
 }
+    .fb-btn{
+        background:@fb-blue;
+        border:1px solid @fb-blue;
+    }
+    .login-footer{
+        ul{
+            list-style: none;
+            color: white;
+            padding:0;
+            text-align: center;
+            font-size: 10px;
+            text-transform: uppercase;
+            li{
+                display: inline-table;
+                a{
+                    color:white;
+                }
+            }
+        }
+    }
     
+}
+
+.create-account{
+    h1{
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin:8vh 0 2vh 0;
+        text-shadow: @textshadow;
+        font-weight: bold;
+    }
 }

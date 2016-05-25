@@ -4340,6 +4340,14 @@ img {
   text-align: center;
 }
 
+.spacer-15 {
+  height: 1vh;
+}
+
+.spacer-30 {
+  height: 2vh;
+}
+
 #header {
   background-color: transparent;
   box-shadow: none;
@@ -4599,20 +4607,70 @@ body.login-content-blackjack .prize-funds p {
   color: white;
 }
 
+body.login-content-blackjack input {
+  background: rgba(255, 255, 255, 0.4);
+  color: #18181a;
+  border: 1px solid #18181a;
+  display: inline-block;
+  padding: 30px 8px;
+  height: 8vh;
+  line-height: 50px;
+  width: 100%;
+  border-radius: 40px;
+  font-size: 12px;
+}
+
+body.login-content-blackjack ::-webkit-input-placeholder {
+  color: #18181a;
+  padding-left: 32px;
+}
+
 body.login-content-blackjack .form-btn {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   text-transform: uppercase;
-  border: 2px solid #18181a;
+  border: 1px solid #18181a;
   display: inline-block;
   padding: 16px 8px;
   width: 100%;
   border-radius: 30px;
   margin-bottom: 10px;
   line-height: 1;
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 body.login-content-blackjack .form-btn:hover {
   background: rgba(0, 0, 0, 0.8);
+}
+
+body.login-content-blackjack .fb-btn {
+  background: #3B5998;
+  border: 1px solid #3B5998;
+}
+
+body.login-content-blackjack .login-footer ul {
+  list-style: none;
+  color: white;
+  padding: 0;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+body.login-content-blackjack .login-footer ul li {
+  display: inline-table;
+}
+
+body.login-content-blackjack .login-footer ul li a {
+  color: white;
+}
+
+.create-account h1 {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 8vh 0 2vh 0;
+  text-shadow: 2px 2px #000000;
+  font-weight: bold;
 }

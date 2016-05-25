@@ -21,41 +21,44 @@
         <div id="l-login" data-ng-class="{ 'toggled': lctrl.login === 1 }" data-ng-if="lctrl.login === 1">
             
             <header>
-                <div class="login-logo">
-                    <img src="img/logo.png">
+                <div class="create-account text-center">
+                    <h1>Create Free Account</h1>
                 </div>
             </header>
             
-            <div class="row prize-funds">
-                <div class="col-xs-8 col-xs-offset-2 jackpot center-align">
-                    <img src="img/jackpot.png">
-                    <h2>€1,000,658*</h2>
-                </div>
-                <div class="col-xs-8 col-xs-offset-2 jackpot center-align">
-                    <img src="img/777.png">
-                    <h2>€10,657*</h2>
-                </div>
-                <div class="col-xs-8 col-xs-offset-2 center-align">
-                    <p>*Real Money Payout. Max Bet.</p>
-                </div>
-            </div>
+            <div class="container">
+                <form>
+                    <div class="form-group">
+                        <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <input type="dob" class="form-control" id="exampleInputEmail1" placeholder="Date of Birth">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                
             
-            <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <a href="create-free-account.html"><button class="form-btn">Play for Free</button></a>
-                    <button class="form-btn">Play for Real Money</button>
+                    <div class="spacer-30"></div>
+                    <div class="row create-account-btns">
+                        <div class="col-xs-12">
+                            <button type="submit" class="form-btn">Register Now</button>
+                            <button class="form-btn fb-btn">Register with Facebook</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row login-footer">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <ul>
+                            <li>Terms &amp; Conditions</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="row login-footer">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <ul>
-                        <li><a href="about-the-game.html">About the Game</a>   |</li>   
-                        <li><a href="rules.html">The Rules</a>   |</li>   
-                        <li><a href="affiliates.html">Affiliates</a>  |</li>
-                        <li><a href="gaming-partners.html">Gaming Partners</a></li>
-                    </ul>
-                </div>
+                
             </div>
 
         </div>

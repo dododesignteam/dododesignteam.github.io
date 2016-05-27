@@ -26,14 +26,32 @@
           setInterval(function(){
             $('.seven').toggleClass("animated infinite");
         }, 8000);
+          
+          setInterval(function(){
+            $('.seven-number').toggleClass("animated infinite");
+        }, 8000);
+          
+          setInterval(function(){
+            $('.jackpot-number').toggleClass("animated infinite");
+        }, 4000);
       </script>
   </head>
   <body>
       
     <div class="card-alt">
-        <h1>Animated Numbers</h1>
+        <h1>Pulsing Numbers</h1>
+        <div class="jackpot-number pulse">
+            <span>€1,000,657</span><br>MAX BET 
+        </div>
+        <div class="seven-number pulse">
+            <span>€10,675</span><br>MAX BET
+        </div>
+    </div>
+      
+    <div class="card-alt">
+        <h1>Numbers Counting Upwards (Refresh)</h1>
         <div class="jackpot-number">
-            <span>€</span><span class="counter" style="display: inline-block; width: 32%">52,147</span><br>MAX BET 
+            <span>€</span><span class="counter" style="display: inline-block; width: 32%">1.10</span><br>MAX BET 
         </div>
         <div class="seven-number">
             <span>€</span><span class="counter" style="display: inline-block; width: 32%">10,237</span><br>MAX BET
@@ -146,12 +164,12 @@
     <script src="js/bootstrap.min.js"></script>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script> 
+    <script src="js/jquery.counterup.js"></script> 
     <script>
         jQuery(document).ready(function( $ ) {
             $('.counter').counterUp({
                 delay: 10,
-                time: 1000
+                time: 2000
             });
         });
     </script>

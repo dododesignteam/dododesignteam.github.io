@@ -30,6 +30,16 @@
   </head>
   <body>
       
+    <div class="card-alt">
+        <h1>Animated Numbers</h1>
+        <div class="jackpot-number">
+            <span>€</span><span class="counter" style="display: inline-block; width: 32%">52,147</span><br>MAX BET 
+        </div>
+        <div class="seven-number">
+            <span>€</span><span class="counter" style="display: inline-block; width: 32%">10,237</span><br>MAX BET
+        </div>
+    </div>
+      
     <div class="card">
         <h1>Bounce</h1>
         <div class="jackpot bounce">
@@ -134,5 +144,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script> 
+    <script>
+        jQuery(document).ready(function( $ ) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
   </body>
 </html>

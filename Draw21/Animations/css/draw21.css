@@ -1,9 +1,13 @@
-.card{
+.card,
+.card-alt{
     width:500px;
     height:889px;
     background-image: url(../img/Draw21.png);
     background-size:cover; 
     position: relative;
+}
+.card-alt{
+    background-image: url(../img/Draw21-numbers.png);
 }
 img{
     max-width:100%;
@@ -19,9 +23,27 @@ img{
     animation-timing-function: linear;
     animation-delay:0;
 }
+.jackpot-number,
+.seven-number{
+    position:absolute;
+    width:160px;
+    text-align: center;
+    top:160px;
+    left:48px;
+    color:white;
+    font-family: Montserrat;
+    font-size:10px;
+}
+.jackpot-number span,
+.seven-number span{
+    font-size:21px;
+}
 .seven{
     left:360px;
     width:50px;
+}
+.seven-number{
+    left:300px;
 }
 h1{
     color: red;

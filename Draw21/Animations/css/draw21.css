@@ -1,0 +1,28 @@
+.card{
+    width:500px;
+    height:889px;
+    background-image: url(../img/Draw21.png);
+    background-size:cover; 
+    position: relative;
+}
+img{
+    max-width:100%;
+}
+.jackpot,
+.seven{
+    position:absolute;
+    width:160px;
+    top:120px;
+    left:48px;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay:0;
+}
+.seven{
+    left:360px;
+    width:50px;
+}
+h1{
+    color: red;
+}

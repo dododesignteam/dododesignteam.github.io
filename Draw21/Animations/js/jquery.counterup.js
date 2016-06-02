@@ -13,7 +13,7 @@
 
     // Defaults
     var settings = $.extend({
-        'time': 400,
+        'time': 4000,
         'delay': 10
     }, options);
 

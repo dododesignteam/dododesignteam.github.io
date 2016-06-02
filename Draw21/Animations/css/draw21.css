@@ -1,5 +1,6 @@
 .card,
-.card-alt{
+.card-alt,
+.card-alt1{
     width:500px;
     height:889px;
     background-image: url(../img/Draw21.png);
@@ -8,6 +9,9 @@
 }
 .card-alt{
     background-image: url(../img/Draw21-numbers.png);
+}
+.card-alt1{
+    background-image: url(../img/Draw21-1.png);
 }
 img{
     max-width:100%;
@@ -47,4 +51,140 @@ img{
 }
 h1{
     color: red;
+}
+.shimmer {
+  text-align: center;
+  color: rgba(255,255,255,0.1);
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  -webkit-background-size: 50px 100%;
+  -moz-background-size: 50px 100%;
+  background-size: 50px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+/* Bars */
+.timer{
+    position: absolute;
+    top:710px;
+    left:125px;
+    opacity:0.7;
+}
+      @-webkit-keyframes bar-slide {
+        0%   { width: 0%;   }
+        100% { width: 100%; }
+      }
+      .bar-timer {
+        margin: 30px 0;
+        height: 5px;
+        width: 250px;
+        border: 1px solid #fff;
+        position: relative;
+        -webkit-border-radius: 3px;
+        box-shadow: #fff 0px 0px 7px;
+      }
+
+      .bar-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: #fff;
+        -webkit-animation-name: bar-slide;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease-out;
+      }
+
+.result{
+    position: absolute;
+    width:500px;
+    height:889px;
+    top:0;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    color:white;
+    display:none;
+}
+.display{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.result h1{
+    color:white;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:200px;
+}
+.result p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Rectangle 19: */
+.result a{
+    background-image: linear-gradient(-180deg, #B4EC51 0%, #429321 100%);
+    border: 2px solid #18181A;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.07);
+    border-radius: 100px;
+    padding:15px 0;
+    /* NEXT HAND : */
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 2.9px;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.50);
+    margin:20px 100px;
+    display: block;
+    width:300px;
+    text-decoration: none;
+    text-transform: uppercase;
 }

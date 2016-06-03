@@ -40,8 +40,22 @@
           setInterval(function(){
             $('.result').addClass("display");
             $('.timer').addClass("hide");
+            $('.amount').addClass("count");
         }, 10000);
       </script>
+      <script>
+          setInterval(function( $ ) {
+      $('.count').each(function () {
+    $(this).prop('Counter',44).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }, 10000);
+    });
+});</script>
   </head>
   <body>
       
@@ -53,8 +67,8 @@
             </div>
         </div>
         <div class="result">
-        <h1>Player Surrenders!<br>€44.73*</h1>
-        <p>*Minimum Payout</p>
+            <h1>Player Surrenders!<br>€<span class="amount">50</span>*</h1>
+        <p class="blink_me">*Calculating Payout</p>
         <a href="">Next Hand</a>
         </div>
     </div>
